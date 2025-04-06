@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b9dcf2;
+    color: #333;
+}
+
+nav {
+    background-color: #f6cfbe;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
