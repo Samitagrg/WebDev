@@ -8,7 +8,7 @@ body {
     padding: 8px;
     font-family: Arial, sans-serif;
     background-color: #b9dcf2;
-    color: #333;
+    color: #5D6169;
 }
 
 nav {
@@ -21,4 +21,22 @@ nav {
     list-style: none;
     display: flex;
     gap: 50px;
+}
+
+ul a {
+    text-decoration: none;
+    color: #5D6169;
+}
+
+ul a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+a {
+    color: #d14c74;
+}
+
+a:hover {
+    color: #fff;
 }
