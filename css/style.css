@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 8px;
     font-family: Arial, sans-serif;
@@ -21,6 +26,7 @@ nav {
     list-style: none;
     display: flex;
     gap: 50px;
+    justify-content: end;
 }
 
 ul a {
@@ -88,6 +94,7 @@ a:hover {
     min-height: 500px;
     width: 100%;
     background-color: #fff;
+    color: #3e4772;
     font-size: 55px;
     padding: 20px;
     display: flex;
@@ -97,19 +104,12 @@ a:hover {
     font-family: "Poetsen One", sans-serif;
 }
 
-.statement {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #5D6169;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
+blockquote cite {
+    display: block;
+    margin-top: 15px;
     text-align: right;
-    font-size: 20px;
+    font-size: 1rem;
+    color: #555;
 }
 
 .assignment-list {
@@ -121,9 +121,100 @@ a:hover {
 }
 
 .assignment-list-card {
-    border: 2px solid #d14c74;
+    background-image: url('../images/pink\ pixel\ cloud.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #d14c74;
     width: 40%;
-    height: 300px;
+    height: 400px;
     background-color: #f6cfbe;
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.assignment-list-card a {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+    color: #5D6169;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile responsive code */
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .assignment-list-card {
+        background-color: #77dd77;
+    }
+
+    footer {
+        background-color: #FF964F;
+    }
+}
+
+.go-to-top {
+    background-color: #7C7F85;
+    color: #b7c6e7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 125px;
+    bottom: 10px;
+
+}
+
+.go-to-top svg {
+    fill: #62CCCC;
+}
+
+.position-relative {
+    position: relative;
+    padding: 40px 300px;
+    background-color: #fff;
+
+}
+
+.position-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #000;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-absolute svg {
+    fill: #b7c6e7;
+    
+}
+
+.self {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 175px;
 }
